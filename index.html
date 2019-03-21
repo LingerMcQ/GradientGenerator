@@ -1,20 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Gradient Background</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 </head>
-<body id="gradient">
-	<h1>Background Generator</h1>
-	<input class="color1" type="color" name="color1" value="#ffffff">
-	<input class="color2" type="color" name="color2" value="#ffffff">
-	<h2>Current CSS Background</h2>
-	<h3>Click the button</h3>
-	<button class="randomChangeBoth">Random</button>
-	<button class="randomChangeLeft">Change Left</button>
-	<button class="randomChangeRight">Change Right</button>
+<body>
+    <div class="header">
+        <div class="topic__container">
+            <div class="topic__text">
+                    Gradient
+                    Generator
+            </div>
+        </div>
+        <div class="info__container">
+            <div class="info__box">
+                    <div class="info__left">
+                        <input class="input__color input__colorLeft" type="color" name="input__colorLeft" value="#ffffff">
+                        <div class="info_colorCode info_colorCodeLeft">
+                            <div class="info__hexLeft">#ffffff</div>
+                            <div class="info__rgbLeft">(255,255,255)</div>
+                        </div>
+                    </div>
+                    <div class="info__arrow">--></div>
+                    <div class="info__right">
+                        <input class="input__color input__colorRight" type="color" name="input__colorRight" value="#ffffff">
+                        <div class="info_colorCode info_colorCodeRight">
+                            <div class="info__hexRight">#ffffff</div>
+                            <div class="info__rgbRight">(255,255,255)</div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+        <div class="btnArea__container">
+            <div class="btnArea__btn randomChangeBoth">Random</div>
+            <div class="btnArea__btn randomChangeLeft">Left</div>
+            <div class="btnArea__btn randomChangeRight">Right</div>
+        </div>
 
 
+
+    </div>
+    <div class="gradient">
+        <div class="logo">
+            Gradient
+            Generator
+        </div>
+    </div>
 </body>
 </html>
