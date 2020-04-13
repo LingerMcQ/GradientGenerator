@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // change color
   function randomColor() {
     let result = [];
+    // 16 碼擇一
     for (i = 1; i <= 6; i++) {
       let randomHexNum = [
         0,
@@ -77,9 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // hex2rgb function
   function hex2rgb(colour) {
     var r, g, b;
+    // 從第二碼(第一個十六位元碼)開始節錄
     if (colour.charAt(0) == "#") {
       colour = colour.substr(1);
     }
+    // 如果只有三碼，轉成六碼
     if (colour.length == 3) {
       colour =
         colour.substr(0, 1) +
@@ -89,9 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
         colour.substr(2, 3) +
         colour.substr(2, 3);
     }
+    // HEX to RGB
     r = colour.charAt(0) + "" + colour.charAt(1);
     g = colour.charAt(2) + "" + colour.charAt(3);
     b = colour.charAt(4) + "" + colour.charAt(5);
+    // 轉成十進位
     r = parseInt(r, 16);
     g = parseInt(g, 16);
     b = parseInt(b, 16);
